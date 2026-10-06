@@ -1,0 +1,2835 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Ardhan Luthfi | Digital Profile</title>
+
+
+    <style>
+
+        /* ==================================================
+           RESET
+        ================================================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+        body {
+
+            font-family:
+                "Segoe UI",
+                Arial,
+                sans-serif;
+
+            color: white;
+
+            min-height: 100vh;
+
+            overflow-x: hidden;
+
+
+            /* BACKGROUND UTAMA */
+
+            background:
+
+                linear-gradient(
+                    120deg,
+
+                    #020006,
+                    #100020,
+                    #210044,
+                    #05002b,
+                    #00183d,
+                    #12002f,
+                    #020006
+                );
+
+            background-size:
+                600% 600%;
+
+            animation:
+                backgroundMove
+                18s
+                ease
+                infinite;
+
+        }
+
+
+        /* ==================================================
+           BACKGROUND BERGERAK
+        ================================================== */
+
+        @keyframes backgroundMove {
+
+            0% {
+                background-position:
+                    0% 50%;
+            }
+
+            20% {
+                background-position:
+                    50% 100%;
+            }
+
+            40% {
+                background-position:
+                    100% 50%;
+            }
+
+            60% {
+                background-position:
+                    70% 0%;
+            }
+
+            80% {
+                background-position:
+                    20% 20%;
+            }
+
+            100% {
+                background-position:
+                    0% 50%;
+            }
+
+        }
+
+
+        /* ==================================================
+           AURORA / CAHAYA
+        ================================================== */
+
+        body::before {
+
+            content: "";
+
+            position: fixed;
+
+            inset: -50%;
+
+            z-index: -5;
+
+            pointer-events: none;
+
+
+            background:
+
+                radial-gradient(
+                    circle at 20% 30%,
+                    rgba(
+                        124,
+                        58,
+                        237,
+                        0.35
+                    ),
+                    transparent 25%
+                ),
+
+                radial-gradient(
+                    circle at 80% 20%,
+                    rgba(
+                        37,
+                        99,
+                        235,
+                        0.35
+                    ),
+                    transparent 25%
+                ),
+
+                radial-gradient(
+                    circle at 50% 80%,
+                    rgba(
+                        168,
+                        85,
+                        247,
+                        0.30
+                    ),
+                    transparent 25%
+                ),
+
+                radial-gradient(
+                    circle at 10% 80%,
+                    rgba(
+                        6,
+                        182,
+                        212,
+                        0.25
+                    ),
+                    transparent 20%
+                );
+
+            filter:
+                blur(55px);
+
+            animation:
+                auroraMove
+                15s
+                ease-in-out
+                infinite
+                alternate;
+
+        }
+
+
+        @keyframes auroraMove {
+
+            0% {
+
+                transform:
+                    translate(
+                        -5%,
+                        -5%
+                    )
+                    rotate(0deg)
+                    scale(1);
+
+            }
+
+            25% {
+
+                transform:
+                    translate(
+                        5%,
+                        -10%
+                    )
+                    rotate(5deg)
+                    scale(1.1);
+
+            }
+
+            50% {
+
+                transform:
+                    translate(
+                        10%,
+                        5%
+                    )
+                    rotate(-5deg)
+                    scale(1.2);
+
+            }
+
+            75% {
+
+                transform:
+                    translate(
+                        -5%,
+                        10%
+                    )
+                    rotate(8deg)
+                    scale(1.1);
+
+            }
+
+            100% {
+
+                transform:
+                    translate(
+                        -10%,
+                        -5%
+                    )
+                    rotate(0deg)
+                    scale(1);
+
+            }
+
+        }
+
+
+        /* ==================================================
+           ORB CAHAYA
+        ================================================== */
+
+        .orb {
+
+            position: fixed;
+
+            border-radius: 50%;
+
+            filter:
+                blur(70px);
+
+            opacity: 0.45;
+
+            pointer-events: none;
+
+            z-index: -4;
+
+        }
+
+
+        .orb.one {
+
+            width: 280px;
+            height: 280px;
+
+            background:
+                #7c3aed;
+
+            top: 10%;
+            left: -100px;
+
+            animation:
+                orbOne
+                12s
+                infinite
+                alternate
+                ease-in-out;
+
+        }
+
+
+        .orb.two {
+
+            width: 300px;
+            height: 300px;
+
+            background:
+                #2563eb;
+
+            right: -120px;
+            top: 40%;
+
+            animation:
+                orbTwo
+                15s
+                infinite
+                alternate
+                ease-in-out;
+
+        }
+
+
+        .orb.three {
+
+            width: 250px;
+            height: 250px;
+
+            background:
+                #a855f7;
+
+            bottom: -100px;
+            left: 40%;
+
+            animation:
+                orbThree
+                14s
+                infinite
+                alternate
+                ease-in-out;
+
+        }
+
+
+        @keyframes orbOne {
+
+            to {
+                transform:
+                    translate(
+                        180px,
+                        100px
+                    )
+                    scale(1.3);
+            }
+
+        }
+
+
+        @keyframes orbTwo {
+
+            to {
+                transform:
+                    translate(
+                        -150px,
+                        -120px
+                    )
+                    scale(1.2);
+            }
+
+        }
+
+
+        @keyframes orbThree {
+
+            to {
+                transform:
+                    translate(
+                        100px,
+                        -100px
+                    )
+                    scale(1.3);
+            }
+
+        }
+
+
+        /* ==================================================
+           BINTANG
+        ================================================== */
+
+        .stars {
+
+            position: fixed;
+
+            inset: 0;
+
+            pointer-events: none;
+
+            z-index: -2;
+
+        }
+
+
+        .star {
+
+            position: absolute;
+
+            width: 3px;
+            height: 3px;
+
+            background: white;
+
+            border-radius: 50%;
+
+            box-shadow:
+                0 0 12px white;
+
+            animation:
+                twinkle
+                4s
+                infinite
+                ease-in-out;
+
+        }
+
+
+        .star:nth-child(1) {
+            top: 10%;
+            left: 15%;
+        }
+
+        .star:nth-child(2) {
+            top: 25%;
+            left: 70%;
+            animation-delay: 1s;
+        }
+
+        .star:nth-child(3) {
+            top: 70%;
+            left: 85%;
+            animation-delay: 2s;
+        }
+
+        .star:nth-child(4) {
+            top: 80%;
+            left: 20%;
+            animation-delay: 3s;
+        }
+
+        .star:nth-child(5) {
+            top: 45%;
+            left: 45%;
+            animation-delay: 1.5s;
+        }
+
+        .star:nth-child(6) {
+            top: 15%;
+            left: 90%;
+            animation-delay: 2.5s;
+        }
+
+        .star:nth-child(7) {
+            top: 60%;
+            left: 60%;
+            animation-delay: 3.5s;
+        }
+
+        .star:nth-child(8) {
+            top: 35%;
+            left: 10%;
+            animation-delay: 4s;
+        }
+
+        .star:nth-child(9) {
+            top: 90%;
+            left: 75%;
+            animation-delay: 2s;
+        }
+
+        .star:nth-child(10) {
+            top: 55%;
+            left: 30%;
+            animation-delay: 1s;
+        }
+
+
+        @keyframes twinkle {
+
+            0%,
+            100% {
+                opacity: 0.2;
+                transform:
+                    scale(1);
+            }
+
+            50% {
+                opacity: 1;
+                transform:
+                    scale(2);
+            }
+
+        }
+
+
+        /* ==================================================
+           NAVBAR
+        ================================================== */
+
+        nav {
+
+            position: fixed;
+
+            top: 0;
+            left: 0;
+
+            width: 100%;
+
+            padding:
+                18px 7%;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content:
+                space-between;
+
+            background:
+                rgba(
+                    3,
+                    3,
+                    15,
+                    0.65
+                );
+
+            backdrop-filter:
+                blur(20px);
+
+            border-bottom:
+                1px solid
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.08
+                );
+
+            z-index: 1000;
+
+        }
+
+
+        .logo {
+
+            font-size: 20px;
+
+            font-weight:
+                800;
+
+            letter-spacing:
+                1px;
+
+        }
+
+
+        .logo span {
+
+            color:
+                #8b5cf6;
+
+            text-shadow:
+                0 0 20px
+                #8b5cf6;
+
+        }
+
+
+        nav ul {
+
+            display: flex;
+
+            gap: 28px;
+
+            list-style: none;
+
+        }
+
+
+        nav a {
+
+            color:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.7
+                );
+
+            text-decoration: none;
+
+            font-size: 13px;
+
+            transition:
+                0.3s;
+
+        }
+
+
+        nav a:hover {
+
+            color: white;
+
+            text-shadow:
+                0 0 15px
+                #8b5cf6;
+
+        }
+
+
+        /* ==================================================
+           HERO
+        ================================================== */
+
+        .hero {
+
+            min-height: 100vh;
+
+            display: flex;
+
+            justify-content:
+                center;
+
+            align-items:
+                center;
+
+            padding:
+                130px 20px 80px;
+
+        }
+
+
+        .hero-container {
+
+            max-width:
+                1100px;
+
+            width: 100%;
+
+            display: grid;
+
+            grid-template-columns:
+                0.8fr 1.2fr;
+
+            gap: 70px;
+
+            align-items:
+                center;
+
+        }
+
+
+        /* ==================================================
+           FOTO
+        ================================================== */
+
+        .photo-area {
+
+            display: flex;
+
+            justify-content:
+                center;
+
+        }
+
+
+        .photo-ring {
+
+            width: 300px;
+            height: 300px;
+
+            padding: 5px;
+
+            border-radius: 50%;
+
+            background:
+
+                conic-gradient(
+                    #7c3aed,
+                    #2563eb,
+                    #06b6d4,
+                    #a855f7,
+                    #7c3aed
+                );
+
+            box-shadow:
+
+                0 0 30px
+                rgba(
+                    124,
+                    58,
+                    237,
+                    0.5
+                );
+
+            animation:
+                rotateRing
+                8s
+                linear
+                infinite;
+
+        }
+
+
+        @keyframes rotateRing {
+
+            to {
+                transform:
+                    rotate(360deg);
+            }
+
+        }
+
+
+        .photo {
+
+            width: 100%;
+            height: 100%;
+
+            border-radius: 50%;
+
+            background:
+                #090014;
+
+            display: flex;
+
+            justify-content:
+                center;
+
+            align-items:
+                center;
+
+            font-size: 90px;
+
+            overflow: hidden;
+
+        }
+
+
+        .photo img {
+
+            width: 100%;
+            height: 100%;
+
+            object-fit: cover;
+
+        }
+
+
+        /* ==================================================
+           HERO TEXT
+        ================================================== */
+
+        .hero-text {
+
+            animation:
+                fadeUp
+                1s
+                ease;
+
+        }
+
+
+        @keyframes fadeUp {
+
+            from {
+
+                opacity: 0;
+
+                transform:
+                    translateY(30px);
+
+            }
+
+            to {
+
+                opacity: 1;
+
+                transform:
+                    translateY(0);
+
+            }
+
+        }
+
+
+        .badge {
+
+            display:
+                inline-block;
+
+            padding:
+                8px 15px;
+
+            border-radius:
+                30px;
+
+            color:
+                #c4b5fd;
+
+            background:
+                rgba(
+                    124,
+                    58,
+                    237,
+                    0.15
+                );
+
+            border:
+                1px solid
+                rgba(
+                    139,
+                    92,
+                    246,
+                    0.35
+                );
+
+            font-size: 11px;
+
+            margin-bottom:
+                20px;
+
+        }
+
+
+        .hero h1 {
+
+            font-size:
+                clamp(
+                    42px,
+                    6vw,
+                    70px
+                );
+
+            line-height:
+                1.05;
+
+            margin-bottom:
+                15px;
+
+        }
+
+
+        .hero h1 span {
+
+            background:
+
+                linear-gradient(
+                    90deg,
+                    #a78bfa,
+                    #60a5fa,
+                    #22d3ee,
+                    #a78bfa
+                );
+
+            background-size:
+                250% auto;
+
+            -webkit-background-clip:
+                text;
+
+            color:
+                transparent;
+
+            animation:
+                textGradient
+                4s
+                linear
+                infinite;
+
+        }
+
+
+        @keyframes textGradient {
+
+            to {
+
+                background-position:
+                    250% center;
+
+            }
+
+        }
+
+
+        .hero h2 {
+
+            color:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.6
+                );
+
+            font-size:
+                19px;
+
+            font-weight:
+                400;
+
+            margin-bottom:
+                25px;
+
+        }
+
+
+        .hero p {
+
+            max-width:
+                600px;
+
+            color:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.6
+                );
+
+            line-height:
+                1.8;
+
+            margin-bottom:
+                30px;
+
+        }
+
+
+        /* ==================================================
+           BUTTON
+        ================================================== */
+
+        .buttons {
+
+            display:
+                flex;
+
+            gap: 15px;
+
+            flex-wrap:
+                wrap;
+
+        }
+
+
+        .btn {
+
+            display:
+                inline-block;
+
+            padding:
+                13px 22px;
+
+            border-radius:
+                12px;
+
+            text-decoration:
+                none;
+
+            font-size:
+                13px;
+
+            font-weight:
+                700;
+
+            transition:
+                0.3s;
+
+        }
+
+
+        .primary {
+
+            color: white;
+
+            background:
+
+                linear-gradient(
+                    135deg,
+                    #7c3aed,
+                    #2563eb
+                );
+
+            box-shadow:
+
+                0 0 25px
+                rgba(
+                    99,
+                    102,
+                    241,
+                    0.3
+                );
+
+        }
+
+
+        .primary:hover {
+
+            transform:
+                translateY(-4px);
+
+            box-shadow:
+
+                0 10px 35px
+                rgba(
+                    99,
+                    102,
+                    241,
+                    0.5
+                );
+
+        }
+
+
+        .secondary {
+
+            color: white;
+
+            background:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.05
+                );
+
+            border:
+                1px solid
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.15
+                );
+
+        }
+
+
+        .secondary:hover {
+
+            background:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.1
+                );
+
+            transform:
+                translateY(-4px);
+
+        }
+
+
+        /* ==================================================
+           SECTION
+        ================================================== */
+
+        section {
+
+            padding:
+                100px 20px;
+
+        }
+
+
+        .container {
+
+            max-width:
+                1100px;
+
+            margin:
+                auto;
+
+        }
+
+
+        .section-title {
+
+            text-align:
+                center;
+
+            margin-bottom:
+                45px;
+
+        }
+
+
+        .section-title small {
+
+            color:
+                #a78bfa;
+
+            letter-spacing:
+                3px;
+
+            font-size:
+                10px;
+
+        }
+
+
+        .section-title h2 {
+
+            font-size:
+                40px;
+
+            margin-top:
+                10px;
+
+        }
+
+
+        .section-title p {
+
+            color:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.5
+                );
+
+            margin-top:
+                10px;
+
+        }
+
+
+        /* ==================================================
+           GLASS
+        ================================================== */
+
+        .glass {
+
+            background:
+
+                linear-gradient(
+                    135deg,
+                    rgba(
+                        255,
+                        255,
+                        255,
+                        0.09
+                    ),
+                    rgba(
+                        255,
+                        255,
+                        255,
+                        0.025
+                    )
+                );
+
+            border:
+                1px solid
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.1
+                );
+
+            backdrop-filter:
+                blur(20px);
+
+            border-radius:
+                24px;
+
+            box-shadow:
+
+                0 25px 60px
+                rgba(
+                    0,
+                    0,
+                    0,
+                    0.25
+                );
+
+        }
+
+
+        /* ==================================================
+           IDENTITAS
+        ================================================== */
+
+        .identity {
+
+            padding:
+                30px;
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(
+                    2,
+                    1fr
+                );
+
+            gap:
+                15px;
+
+        }
+
+
+        .info {
+
+            padding:
+                20px;
+
+            border-radius:
+                15px;
+
+            background:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.035
+                );
+
+            border:
+                1px solid
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.06
+                );
+
+            transition:
+                0.3s;
+
+        }
+
+
+        .info:hover {
+
+            transform:
+                translateY(-4px);
+
+            border-color:
+                rgba(
+                    139,
+                    92,
+                    246,
+                    0.5
+                );
+
+            box-shadow:
+
+                0 10px 30px
+                rgba(
+                    124,
+                    58,
+                    237,
+                    0.15
+                );
+
+        }
+
+
+        .info small {
+
+            display:
+                block;
+
+            color:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.4
+                );
+
+            font-size:
+                10px;
+
+            margin-bottom:
+                7px;
+
+        }
+
+
+        .info strong {
+
+            color:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.9
+                );
+
+            font-size:
+                14px;
+
+        }
+
+
+        /* ==================================================
+           HOBI
+        ================================================== */
+
+        .hobby-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(
+                    3,
+                    1fr
+                );
+
+            gap:
+                20px;
+
+        }
+
+
+        .hobby-card {
+
+            padding:
+                35px 25px;
+
+            text-align:
+                center;
+
+            cursor:
+                pointer;
+
+            transition:
+                0.4s;
+
+            position:
+                relative;
+
+        }
+
+
+        .hobby-card:hover {
+
+            transform:
+                translateY(-8px);
+
+            border-color:
+                rgba(
+                    139,
+                    92,
+                    246,
+                    0.4
+                );
+
+        }
+
+
+        .hobby-card.active {
+
+            border-color:
+                #8b5cf6;
+
+            box-shadow:
+
+                0 0 35px
+                rgba(
+                    124,
+                    58,
+                    237,
+                    0.3
+                );
+
+            transform:
+                translateY(-5px);
+
+        }
+
+
+        .icon {
+
+            width:
+                70px;
+
+            height:
+                70px;
+
+            margin:
+                auto auto 20px;
+
+            border-radius:
+                20px;
+
+            display:
+                flex;
+
+            justify-content:
+                center;
+
+            align-items:
+                center;
+
+            font-size:
+                32px;
+
+            background:
+
+                linear-gradient(
+                    135deg,
+                    rgba(
+                        124,
+                        58,
+                        237,
+                        0.25
+                    ),
+                    rgba(
+                        37,
+                        99,
+                        235,
+                        0.15
+                    )
+                );
+
+            border:
+                1px solid
+                rgba(
+                    139,
+                    92,
+                    246,
+                    0.25
+                );
+
+        }
+
+
+        .hobby-card h3 {
+
+            font-size:
+                19px;
+
+            margin-bottom:
+                8px;
+
+        }
+
+
+        .hobby-card p {
+
+            color:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.5
+                );
+
+            font-size:
+                12px;
+
+        }
+
+
+        /* ==================================================
+           DETAIL HOBI
+        ================================================== */
+
+        .hobby-detail {
+
+            max-height:
+                0;
+
+            overflow:
+                hidden;
+
+            opacity:
+                0;
+
+            transition:
+                0.5s;
+
+        }
+
+
+        .hobby-detail.show {
+
+            max-height:
+                500px;
+
+            opacity:
+                1;
+
+            margin-top:
+                20px;
+
+        }
+
+
+        .detail-box {
+
+            padding:
+                25px;
+
+            text-align:
+                left;
+
+            border-radius:
+                20px;
+
+        }
+
+
+        .detail-title {
+
+            color:
+                #c4b5fd;
+
+            font-size:
+                16px;
+
+            margin-bottom:
+                15px;
+
+        }
+
+
+        .detail-list {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(
+                    2,
+                    1fr
+                );
+
+            gap:
+                10px;
+
+            list-style:
+                none;
+
+        }
+
+
+        .detail-list li {
+
+            padding:
+                13px 15px;
+
+            background:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.05
+                );
+
+            border:
+                1px solid
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.07
+                );
+
+            border-radius:
+                10px;
+
+            font-size:
+                13px;
+
+            color:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.75
+                );
+
+        }
+
+
+        .detail-list li::before {
+
+            content:
+                "✦ ";
+
+            color:
+                #8b5cf6;
+
+        }
+
+
+        /* ==================================================
+           CITA-CITA
+        ================================================== */
+
+        .dream {
+
+            padding:
+                50px 30px;
+
+            text-align:
+                center;
+
+        }
+
+
+        .rocket {
+
+            font-size:
+                60px;
+
+            margin-bottom:
+                20px;
+
+            filter:
+
+                drop-shadow(
+                    0 0 20px
+                    #8b5cf6
+                );
+
+            animation:
+                rocketFloat
+                3s
+                ease-in-out
+                infinite;
+
+        }
+
+
+        @keyframes rocketFloat {
+
+            0%,
+            100% {
+                transform:
+                    translateY(0);
+            }
+
+            50% {
+                transform:
+                    translateY(-12px);
+            }
+
+        }
+
+
+        .dream h3 {
+
+            font-size:
+                26px;
+
+            margin-bottom:
+                15px;
+
+        }
+
+
+        .dream p {
+
+            max-width:
+                700px;
+
+            margin:
+                auto;
+
+            color:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.55
+                );
+
+            line-height:
+                1.8;
+
+        }
+
+
+        /* ==================================================
+           SOCIAL MEDIA
+        ================================================== */
+
+        .social-title {
+
+            text-align:
+                center;
+
+            margin-top:
+                60px;
+
+            margin-bottom:
+                25px;
+
+        }
+
+
+        .social-title h3 {
+
+            font-size:
+                22px;
+
+        }
+
+
+        .social-title p {
+
+            color:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.45
+                );
+
+            font-size:
+                13px;
+
+            margin-top:
+                5px;
+
+        }
+
+
+        .social-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(
+                    3,
+                    1fr
+                );
+
+            gap:
+                15px;
+
+        }
+
+
+        .social-card {
+
+            padding:
+                22px;
+
+            text-decoration:
+                none;
+
+            color:
+                white;
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            gap:
+                15px;
+
+            transition:
+                0.3s;
+
+        }
+
+
+        .social-card:hover {
+
+            transform:
+                translateY(-5px);
+
+            border-color:
+                rgba(
+                    139,
+                    92,
+                    246,
+                    0.5
+                );
+
+            box-shadow:
+
+                0 10px 30px
+                rgba(
+                    124,
+                    58,
+                    237,
+                    0.15
+                );
+
+        }
+
+
+        .social-icon {
+
+            width:
+                45px;
+
+            height:
+                45px;
+
+            border-radius:
+                13px;
+
+            display:
+                flex;
+
+            justify-content:
+                center;
+
+            align-items:
+                center;
+
+            font-size:
+                15px;
+
+            font-weight:
+                bold;
+
+            background:
+
+                linear-gradient(
+                    135deg,
+                    #7c3aed,
+                    #2563eb
+                );
+
+        }
+
+
+        .social-card small {
+
+            display:
+                block;
+
+            color:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.4
+                );
+
+            font-size:
+                10px;
+
+            margin-bottom:
+                3px;
+
+        }
+
+
+        .social-card strong {
+
+            font-size:
+                13px;
+
+        }
+
+
+        /* ==================================================
+           FOOTER
+        ================================================== */
+
+        footer {
+
+            text-align:
+                center;
+
+            padding:
+                35px 20px;
+
+            border-top:
+                1px solid
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.07
+                );
+
+            color:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.35
+                );
+
+            font-size:
+                12px;
+
+        }
+
+
+        /* ==================================================
+           RESPONSIVE HP
+        ================================================== */
+
+        @media(max-width: 850px) {
+
+            nav ul {
+                display:
+                    none;
+            }
+
+
+            .hero-container {
+
+                grid-template-columns:
+                    1fr;
+
+                text-align:
+                    center;
+
+                gap:
+                    45px;
+
+            }
+
+
+            .hero p {
+
+                margin-left:
+                    auto;
+
+                margin-right:
+                    auto;
+
+            }
+
+
+            .buttons {
+
+                justify-content:
+                    center;
+
+            }
+
+
+            .photo-ring {
+
+                width:
+                    240px;
+
+                height:
+                    240px;
+
+            }
+
+
+            .hobby-grid {
+
+                grid-template-columns:
+                    1fr;
+
+            }
+
+
+            .social-grid {
+
+                grid-template-columns:
+                    1fr;
+
+            }
+
+        }
+
+
+        @media(max-width: 550px) {
+
+            .hero h1 {
+
+                font-size:
+                    42px;
+
+            }
+
+
+            .section-title h2 {
+
+                font-size:
+                    30px;
+
+            }
+
+
+            .identity {
+
+                grid-template-columns:
+                    1fr;
+
+                padding:
+                    20px;
+
+            }
+
+
+            .detail-list {
+
+                grid-template-columns:
+                    1fr;
+
+            }
+
+
+            .photo-ring {
+
+                width:
+                    200px;
+
+                height:
+                    200px;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- ==================================================
+         BACKGROUND
+    ================================================== -->
+
+    <div class="orb one"></div>
+
+    <div class="orb two"></div>
+
+    <div class="orb three"></div>
+
+
+    <div class="stars">
+
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+
+    </div>
+
+
+
+    <!-- ==================================================
+         NAVBAR
+    ================================================== -->
+
+    <nav>
+
+        <div class="logo">
+
+            ARDHAN<span>.</span>
+
+        </div>
+
+
+        <ul>
+
+            <li>
+                <a href="#home">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="#identitas">
+                    Identitas
+                </a>
+            </li>
+
+            <li>
+                <a href="#hobi">
+                    Hobi
+                </a>
+            </li>
+
+            <li>
+                <a href="#cita">
+                    Cita-cita
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+
+    <!-- ==================================================
+         HERO
+    ================================================== -->
+
+    <section
+        class="hero"
+        id="home"
+    >
+
+        <div class="hero-container">
+
+
+            <div class="photo-area">
+
+                <div class="photo-ring">
+
+                    <div class="photo">
+
+                        <!--
+                        GANTI EMOJI DENGAN FOTO
+
+                        <img src="foto.jpg"
+                             alt="Foto Ardhan">
+                        -->
+
+                        👤
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="hero-text">
+
+                <div class="badge">
+
+                    ✦ DIGITAL PROFILE
+
+                </div>
+
+
+                <h1>
+
+                    Biodata,
+
+                    <br>
+
+                    <span>
+                        Ardhan Luthfi Pradana
+                    </span>
+
+                </h1>
+
+
+                <h2>
+
+                    Pelajar • Teknologi • Networking • Exercise
+
+                </h2>
+
+
+                <p>
+
+                    Selamat datang di website profil saya.
+                    Di sini Anda dapat mengenal saya lebih
+                    dekat, mulai dari identitas, hobi,
+                    minat di bidang teknologi, hingga
+                    cita-cita saya.
+
+                </p>
+
+
+                <div class="buttons">
+
+                    <a
+                        href="#identitas"
+                        class="btn primary"
+                    >
+                        Lihat Identitas
+                    </a>
+
+
+                    <a
+                        href="#hobi"
+                        class="btn secondary"
+                    >
+                        Jelajahi Hobi
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         IDENTITAS
+    ================================================== -->
+
+    <section id="identitas">
+
+        <div class="container">
+
+
+            <div class="section-title">
+
+                <small>
+                    PROFILE
+                </small>
+
+                <h2>
+                    Identitas Diri
+                </h2>
+
+                <p>
+                    Informasi mengenai diri saya
+                </p>
+
+            </div>
+
+
+            <div class="glass identity">
+
+
+                <div class="info">
+
+                    <small>
+                        NAMA LENGKAP
+                    </small>
+
+                    <strong>
+                        Ardhan Luthfi Pradana
+                    </strong>
+
+                </div>
+
+
+                <div class="info">
+
+                    <small>
+                        NAMA PANGGILAN
+                    </small>
+
+                    <strong>
+                        Ardhan
+                    </strong>
+
+                </div>
+
+
+                <div class="info">
+
+                    <small>
+                        TEMPAT, TANGGAL LAHIR
+                    </small>
+
+                    <strong>
+                        12 FEBRUARI 2009
+                    </strong>
+
+                </div>
+
+
+                <div class="info">
+
+                    <small>
+                        JENIS KELAMIN
+                    </small>
+
+                    <strong>
+                        Laki-laki
+                    </strong>
+
+                </div>
+
+
+                <div class="info">
+
+                    <small>
+                        STATUS
+                    </small>
+
+                    <strong>
+                        Pelajar
+                    </strong>
+
+                </div>
+
+
+                <div class="info">
+
+                    <small>
+                        MINAT
+                    </small>
+
+                    <strong>
+                        Teknologi Jaringan & Olahraga
+                    </strong>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         HOBI & MINAT
+    ================================================== -->
+
+    <section id="hobi">
+
+        <div class="container">
+
+
+            <div class="section-title">
+
+                <small>
+                    INTEREST
+                </small>
+
+                <h2>
+                    Hobi & Minat
+                </h2>
+
+                <p>
+                    Klik salah satu kategori untuk melihat
+                    daftar yang saya sukai
+                </p>
+
+            </div>
+
+
+            <div class="hobby-grid">
+
+
+                <!-- GAMING -->
+
+                <div
+                    class="glass hobby-card"
+                    onclick="showHobby('gaming', this)"
+                >
+
+                    <div class="icon">
+                        🎮
+                    </div>
+
+                    <h3>
+                        Gaming
+                    </h3>
+
+                    <p>
+                        Game yang saya mainkan
+                    </p>
+
+                </div>
+
+
+
+                <!-- TECHNOLOGY -->
+
+                <div
+                    class="glass hobby-card"
+                    onclick="showHobby('technology', this)"
+                >
+
+                    <div class="icon">
+                        💻
+                    </div>
+
+                    <h3>
+                        Technology
+                    </h3>
+
+                    <p>
+                        Teknologi yang saya pelajari
+                    </p>
+
+                </div>
+
+
+
+                <!-- MUSIK -->
+
+                <div
+                    class="glass hobby-card"
+                    onclick="showHobby('music', this)"
+                >
+
+                    <div class="icon">
+                        🎵
+                    </div>
+
+                    <h3>
+                        Musik
+                    </h3>
+
+                    <p>
+                        Platform musik yang saya gunakan
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- DETAIL GAMING -->
+
+            <div
+                id="gaming"
+                class="hobby-detail"
+            >
+
+                <div class="glass detail-box">
+
+                    <div class="detail-title">
+
+                        🎮 Game Favorit Saya
+
+                    </div>
+
+
+                    <ul class="detail-list">
+
+                        <li>
+                            Free Fire
+                        </li>
+
+                        <li>
+                            Blood Strike
+                        </li>
+
+                        <li>
+                            GTA San Andreas
+                        </li>
+
+                        <li>
+                            Dream League Soccer
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- DETAIL TECHNOLOGY -->
+
+            <div
+                id="technology"
+                class="hobby-detail"
+            >
+
+                <div class="glass detail-box">
+
+                    <div class="detail-title">
+
+                        💻 Teknologi & Skill
+
+                    </div>
+
+
+                    <ul class="detail-list">
+
+                        <li>
+                            Cisco Packet Tracer
+                        </li>
+
+                        <li>
+                            Fiber Optik
+                        </li>
+
+                        <li>
+                            Teknisi Jaringan
+                        </li>
+
+                        <li>
+                            Coding
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- DETAIL MUSIK -->
+
+            <div
+                id="music"
+                class="hobby-detail"
+            >
+
+                <div class="glass detail-box">
+
+                    <div class="detail-title">
+
+                        🎵 Platform Musik & Hiburan
+
+                    </div>
+
+
+                    <ul class="detail-list">
+
+                        <li>
+                            Spotify
+                        </li>
+
+                        <li>
+                            YouTube
+                        </li>
+
+                        <li>
+                            TikTok
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         CITA-CITA
+    ================================================== -->
+
+    <section id="cita">
+
+        <div class="container">
+
+
+            <div class="section-title">
+
+                <small>
+                    FUTURE
+                </small>
+
+                <h2>
+                    Cita-cita
+                </h2>
+
+                <p>
+                    Tujuan dan impian saya
+                </p>
+
+            </div>
+
+
+            <div class="glass dream">
+
+
+                <div class="rocket">
+                    🚀
+                </div>
+
+
+                <h3>
+
+                    Menjadi Ahli di Bidang
+                    Teknologi & Jaringan (ENGINEERING)
+
+                </h3>
+
+
+                <p>
+
+                    Saya ingin terus mempelajari dan
+                    mengembangkan kemampuan di bidang
+                    teknologi, jaringan komputer,
+                    fiber optik, coding, elektro serta berbagai
+                    teknologi baru.
+
+                    <br><br>
+
+                    Saya ingin membangun masa depan
+                    yang lebih baik dengan kemampuan
+                    yang saya miliki dan terus berkembang
+                    menjadi versi terbaik dari diri saya.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- ==================================================
+                 MEDIA SOSIAL
+            ================================================== -->
+
+            <div class="social-title">
+
+                <h3>
+                    🌐 Media Sosial 
+                </h3>
+
+                <p>
+                    Temukan saya di media sosial
+                </p>
+
+            </div>
+
+
+            <div class="social-grid">
+
+
+                <!-- FACEBOOK -->
+
+                <a
+                    href="#"
+                    class="glass social-card"
+                >
+
+                    <div class="social-icon">
+                        <img src="images.jpg" style="width: 20px; height: 20px:">
+                    </div>
+
+                    <div>
+
+                        <small>
+                            FACEBOOK
+                        </small>
+
+                        <strong>
+                            Ardhanluthfi
+                        </strong>
+
+                    </div>
+
+                </a>
+
+
+
+                <!-- INSTAGRAM -->
+
+                <a
+                    href="#"
+                    class="glass social-card"
+                >
+
+                    <div class="social-icon">
+                        <img src="instagram_icon.png" style="width: 20px; height: 20px;">
+                    </div>
+
+                    <div>
+
+                        <small>
+                            INSTAGRAM
+                        </small>
+
+                        <strong>
+                            ArdhanLpp
+                        </strong>
+
+                    </div>
+
+                </a>
+
+
+
+                <!-- TIKTOK -->
+
+                <a
+                    href="#"
+                    class="glass social-card"
+                >
+
+                    <div class="social-icon">
+                        <img src="images (2).png" style="width: 20px; height: 20px;">
+                    </div>
+
+                    <div>
+
+                        <small>
+                            TIKTOK
+                        </small>
+
+                        <strong>
+                            -DHANZ'
+                        </strong>
+
+                    </div>
+
+                </a>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         FOOTER
+    ================================================== -->
+
+    <footer>
+
+        © 2026 Ardhan Luthfi
+
+        <br><br>
+
+        Built with
+        <span style="color:#a78bfa;">
+            ♥
+        </span>
+        • HTML • CSS • JavaScript
+
+    </footer>
+
+
+
+    <!-- ==================================================
+         JAVASCRIPT
+    ================================================== -->
+
+    <script>
+
+
+        function showHobby(
+            type,
+            card
+        ) {
+
+
+            /* SEMBUNYIKAN SEMUA DETAIL */
+
+            const details =
+                document.querySelectorAll(
+                    ".hobby-detail"
+                );
+
+
+            details.forEach(
+                function(detail) {
+
+                    detail.classList.remove(
+                        "show"
+                    );
+
+                }
+            );
+
+
+            /* HAPUS ACTIVE */
+
+            const cards =
+                document.querySelectorAll(
+                    ".hobby-card"
+                );
+
+
+            cards.forEach(
+                function(item) {
+
+                    item.classList.remove(
+                        "active"
+                    );
+
+                }
+            );
+
+
+            /* TAMPILKAN DETAIL YANG DIPILIH */
+
+            const selected =
+                document.getElementById(
+                    type
+                );
+
+
+            selected.classList.add(
+                "show"
+            );
+
+
+            card.classList.add(
+                "active"
+            );
+
+
+            /* SCROLL HALUS */
+
+            setTimeout(
+                function() {
+
+                    selected.scrollIntoView({
+                        behavior: "smooth",
+                        block: "center"
+                    });
+
+                },
+                150
+            );
+
+        }
+
+
+    </script>
+
+
+</body>
+
+</html>
